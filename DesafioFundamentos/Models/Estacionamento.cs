@@ -41,11 +41,11 @@ namespace DesafioFundamentos.Models
                 int horas = 0;
                 decimal valorTotal = 0;
                 
-                horas = Console.ReadLine();
-                valorTotal = precoInicial + precoPorHora * horas
+                horas = int.Parse(Console.ReadLine());
+                valorTotal = precoInicial + precoPorHora * horas;
 
                 // TODO: Remover a placa digitada da lista de veículos
-                veiculos.Remove(placa)
+                veiculos.Remove(placa);
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
             }
             else
@@ -62,7 +62,7 @@ namespace DesafioFundamentos.Models
                 Console.WriteLine("Os veículos estacionados são:");
                 foreach (string carro in veiculos)
                 {
-                    Console.WriteLine($"{carro}")
+                    Console.WriteLine($"{carro}");
                     
                 }
             else
