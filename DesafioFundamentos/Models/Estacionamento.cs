@@ -65,6 +65,7 @@ namespace DesafioFundamentos.Models
                     Console.WriteLine($"{carro}");
                     
                 }
+            }   
             else
             {
                 Console.WriteLine("Não há veículos estacionados.");
